@@ -7,8 +7,17 @@ class UserCard extends React.Component {
         console.log(this.props)
         return (
             <div className='user-card card'>
-                <img>{this.props.user.avatar_URL}g</img>
-                <p>{this.props.user.login}</p>
+                <img src= {this.props.user.avatar_url}/>
+                <div className='card-info'>
+                    <h3 className='name'>{this.props.user.name}</h3>
+                    <p className='username'>{this.props.user.login}</p>
+                    <p>Location: {this.props.user.location}</p>
+                    <p>Profile: {this.props.user.html_url}</p>
+                    <p>Followers: {this.props.user.followers}</p>
+                    <p>Following: {this.props.user.following}</p>
+                    <p>{this.props.user.bio}</p>
+                </div>
+
             </div>
 
         )

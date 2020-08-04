@@ -47,7 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-
+h1, h2 {
+  font-size: 4rem;
+  line-height: 2;
+}
 /* Reset above, our CSS below */
 
 html, body, * {
@@ -62,7 +65,7 @@ body {
   background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 50px auto;
   padding: 30px;
   display: flex;
@@ -93,7 +96,7 @@ body {
 }
 
 .card {
-  width: 100%;
+  width: 50%;
   padding: 20px;
   display: flex;
   border-radius: 5px;
@@ -104,6 +107,7 @@ body {
 
 .user-card {
   background-color: darkslategray;
+  color: white;
 }
 
 .card img {
