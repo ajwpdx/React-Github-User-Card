@@ -79,12 +79,14 @@ body {
 }
 
 .header img {
-  width: 30%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .header p {
   font-size: 48px;
 }
+
 
 .cards {
   width: 100%;
@@ -98,6 +100,10 @@ body {
   box-shadow: 0 1px 6px -2px #000;
   background-color: #FFF;
   margin-bottom: 30px;
+}
+
+.user-card {
+  background-color: darkslategray;
 }
 
 .card img {
