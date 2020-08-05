@@ -6,7 +6,7 @@ class UserCard extends React.Component {
     render() {
         console.log(this.props)
         return (
-            <div className='user-card card'>
+            <div className={this.props.user.hireable ? "hireable user-card card" : 'user-card card'}>
                 <img src= {this.props.user.avatar_url}/>
                 <div className='card-info'>
                     <h3 className='name'>{this.props.user.name}</h3>

@@ -73,11 +73,21 @@ body {
   align-items: center;
 }
 
+.follow-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-container{
+  width: 47%
+}
+
 .header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   margin-bottom: 50px;
 }
 
@@ -96,7 +106,7 @@ body {
 }
 
 .card {
-  width: 50%;
+ 
   padding: 20px;
   display: flex;
   border-radius: 5px;
@@ -106,9 +116,22 @@ body {
 }
 
 .user-card {
-  background-color: darkslategray;
-  color: white;
+  background-color: lightgoldenrodyellow;
 }
+
+.follower-card{
+  background-color: crimson;
+}
+
+.following-card{
+  background-color: goldenrod;
+}
+
+.hireable{
+  border: 5px solid blue;
+  
+}
+
 
 .card img {
   width: 150px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-class FollowersCard extends React.Component {
+class FollowingCard extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -14,7 +14,7 @@ class FollowersCard extends React.Component {
 
         console.log('followers mount >', this.props)
         axios
-        .get(`https://api.github.com/users/${this.props.followerUsername}`)
+        .get(`https://api.github.com/users/${this.props.followingUsername}`)
         .then( res => {
             console.log("follower>",res)
             this.setState({
@@ -28,7 +28,7 @@ class FollowersCard extends React.Component {
 
     render() {
         return(
-            <div className={this.state.follower.hireable ? "hireable follower-card card" : 'follower-card card'}>
+            <div className={this.state.follower.hireable ? "hireable following-card card" : 'following-card card'}>
                 <img src= {this.state.follower.avatar_url}/>
                 <div className='card-info'>
                     <h3 className='name'>{this.state.follower.name}</h3>
@@ -46,4 +46,4 @@ class FollowersCard extends React.Component {
 
 }
 
-export default FollowersCard
+export default FollowingCard
